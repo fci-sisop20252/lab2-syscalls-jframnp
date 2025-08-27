@@ -27,7 +27,7 @@ int main() {
      * TODO 1: Abrir o arquivo 'dados/teste1.txt' para leitura
      * Use open() com O_RDONLY
      */
-    fd = open("dados/teste1.txt", O_RDONLY);/* COMPLETE AQUI */;
+    fd = open("dados/teste1.txt", O_RDONLY); /* COMPLETE AQUI */;
     
     /*
      * TODO 2: Verificar se a abertura foi bem-sucedida
@@ -48,21 +48,22 @@ int main() {
     
     /*
      * TODO 4: Verificar se a leitura foi bem-sucedida
-    */
+     */
     if (bytes_lidos < 0) {
         perror("Erro na leitura");
         close(fd);
         return 1;
-    }
-    else if (bytes_lidos == 0) {
+    } else if (bytes_lidos == 0) {
+        // Fim do arquivo
         printf("Fim do arquivo.\n");
     }
+    
     /*
      * TODO 5: Adicionar terminador nulo
      * Para tratar o buffer como string
      */
     buffer[bytes_lidos] = '\0';
-
+    
     // Exibir resultados
     printf("Bytes lidos:  %ld\n", bytes_lidos);
     printf("Conteúdo:\n%s\n", buffer);
