@@ -90,6 +90,7 @@ int main() {
     }
     
     printf("\nExecute: strace -c ./ex3_contador\n");
+    printf("\nExecute: strace -c ./ex3_contador\n");
     
     return 0;
 }
