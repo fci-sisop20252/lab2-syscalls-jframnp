@@ -27,7 +27,7 @@ int main() {
      * TODO 1: Abrir o arquivo 'dados/teste1.txt' para leitura
      * Use open() com O_RDONLY
      */
-    fd = open("dados/teste1.txt", O_RDONLY); /* COMPLETE AQUI */;
+    fd = open("dados/teste1.txt", O_RDONLY);
     
     /*
      * TODO 2: Verificar se a abertura foi bem-sucedida
@@ -44,7 +44,7 @@ int main() {
      * TODO 3: Ler dados do arquivo
      * Use read() para ler até (BUFFER_SIZE - 1) bytes
      */
-    bytes_lidos = read(fd, buffer, BUFFER_SIZE - 1); /* COMPLETE AQUI */;
+    bytes_lidos = read(fd, buffer, BUFFER_SIZE - 1);
     
     /*
      * TODO 4: Verificar se a leitura foi bem-sucedida
